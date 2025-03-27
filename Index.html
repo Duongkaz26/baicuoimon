@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../Index.css">
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom box-shadow mb-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">Yola</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="Index.html"><i class="bi bi-house-door"></i></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="programDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Chương trình
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                            <li><a class="dropdown-item" href="/Home/KhoaHoc">Khóa học</a></li>
+                            <li><a class="dropdown-item" href="/Home/KhoaHocThieuNhi">Tiếng Anh thiếu nhi</a></li>
+                            <li><a class="dropdown-item" href="/Home/KhoaHocThieuNien">Tiếng Anh thiếu niên</a></li>
+                            <li><a class="dropdown-item" href="/Home/KhoaHocNenTang">Tiếng Anh học thuật nền tảng</a></li>
+                            <li><a class="dropdown-item" href="/Home/IELTS">Luyện Thi IELTS</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="utilityDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tiện ích
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="utilityDropdown">
+                            <li><a class="dropdown-item" href="/Home/Event">Sự kiện</a></li>
+                            <li><a class="dropdown-item" href="/Home/New">Tin Tức</a></li>
+                            <li><a class="dropdown-item" href="/Home/Learn">Bí quyết học tiếng anh</a></li>
+                            <li><a class="dropdown-item" href="/Home/Team">Gương mặt xuất sắc</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/Home/HocPhiVaHocBong">Học phí và học bổng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="QuaUuDai.html">Quà ưu đãi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav><br><br>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+      <main role="main" class="pb-3">
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <a asp-controller="Home" asp-action="Event1">
+              <div
+                class="carousel-item active"
+                style="
+                  background-image: url('./Image/home-banner-2.png');
+                "
+              ></div
+            ></a>
+            <a asp-controller="Home" asp-action="Event2">
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url('./Image/WEB-copy.png');
+                "
+              ></div
+            ></a>
+            <a asp-controller="Home" asp-action="Event3">
+              <div
+                class="carousel-item"
+                style="
+                  background-image: url('./Image/bANNER-WEB.png');
+                "
+              ></div
+            ></a>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <br /><br />
+
+        <div class="row align-items-center">
+          <div class="col-sm-6 text-center" style="height: 60vh">
+            <img
+              src="./Image/catbuoc-img.png"
+              alt="pic"
+            />
+          </div>
+          <div class="col-sm-6" style="width: 500px">
+            <h1>Tự tin trở thành công dân toàn cầu cùng Yola</h1>
+            <div class="the-tuy-chinh" style="background-color: #f44336">
+              <span>Tự tin giao tiếp</span>
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="the-tuy-chinh" style="background-color: #9c27b0">
+              <span>Vững vàng hội nhập</span>
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="the-tuy-chinh" style="background-color: #ff9800">
+              <span>Sẵn sàng dẫn đầu</span>
+              <i class="fas fa-trophy"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10vh; margin-bottom: 20px">
+          <h2 class="tieu-de-muc">Lộ trình bứt phá</h2>
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <a
+                  asp-controller="Home"
+                  asp-action="KhoaHocNenTang"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <div class="card the-san-pham" style="height: 450px">
+                    <img
+                      alt="Product image 1"
+                      class="anh-san-pham"
+                      src="./Image/ct1.png"
+                      style="width: 100%; height: auto"
+                    />
+                    <div class="card-body">
+                      <h5 class="tieu-de-san-pham">Tiếng Anh Thiếu Nhi</h5>
+                      <ul style="padding: 10px">
+                        <li style="text-align: left">Tiếng Anh giao tiếp</li>
+                        <li style="text-align: left">Nền tảng luyện thi</li>
+                        <li style="text-align: left">Kỹ năng thế kỷ 21</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  asp-controller="Home"
+                  asp-action="IELTS"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <div class="card the-san-pham" style="height: 450px">
+                    <img
+                      alt="Product image 2"
+                      class="anh-san-pham"
+                      src="./Image/ct2.png"
+                      style="width: 100%; height: auto"
+                    />
+                    <div class="card-body">
+                      <h5 class="tieu-de-san-pham">Tiếng Anh Thiếu Niên</h5>
+                      <ul style="padding: 10px">
+                        <li style="text-align: left">Tiếng Anh học thuật</li>
+                        <li style="text-align: left">Nền tảng luyện thi</li>
+                        <li style="text-align: left">Kỹ năng thế kỷ 21</li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 10vh; margin-bottom: 20px">
+          <h2 class="tieu-de-muc">Lộ trình bứt phá</h2>
+          <div class="container mt-5">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <a
+                  asp-controller="Home"
+                  asp-action="KhoaHocNenTang"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <div class="card the-san-pham" style="height: 500px">
+                    <img
+                      alt="Product image 1"
+                      class="anh-san-pham"
+                      src="https://yola.vn/wp-content/uploads/2023/07/ct4.png"
+                      style="width: 100%; height: auto"
+                    />
+                    <div class="card-body">
+                      <h5 class="tieu-de-san-pham">Tiếng Anh Học Thuật Nền Tảng</h5>
+                      <ul style="padding: 10px">
+                        <li style="text-align: left">
+                          Trang bị kiến thức và kỹ năng tiếng Anh nền tảng
+                        </li>
+                        <li style="text-align: left">
+                          Nâng cao khả năng giao tiếp
+                        </li>
+                        <li style="text-align: left">
+                          Phát triển tư duy phản biện và khả năng học tập chủ động
+                        </li>
+                        <li style="text-align: left">
+                          Làm quen với bài thi chuẩn hóa
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a
+                  asp-controller="Home"
+                  asp-action="IELTS"
+                  style="text-decoration: none; color: inherit"
+                >
+                  <div class="card the-san-pham" style="height: 500px">
+                    <img
+                      alt="Product image 2"
+                      class="anh-san-pham"
+                      src="https://yola.vn/wp-content/uploads/2023/07/ct5.png"
+                      style="width: 100%; height: auto"
+                    />
+                    <div class="card-body">
+                      <h5 class="tieu-de-san-pham">Luyện Thi IELTS</h5>
+                      <ul style="padding: 10px">
+                        <li style="text-align: left">
+                          Luyện thi cam kết nâng từ 0.5 – 1.0 band IELTS sau mỗi
+                          khoá học
+                        </li>
+                        <li style="text-align: left">
+                          Đa dạng hoạt động tối ưu điểm số
+                        </li>
+                        <li style="text-align: left">
+                          Ứng dụng công nghệ tối ưu hóa kết quả học tập
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="text-center"
+          style="margin-top: 10vh; margin-bottom: 100px; height: 80vh"
+        >
+          <h2 class="tieu-de-muc">Thiết kế</h2>
+          <h4>Giúp trẻ từ 6 tuổi đạt IELTS 7.0+ trong 7 năm</h4>
+          <img
+            alt="image"
+            src="./Image/thiet-ke.png"
+            style="height: 700px"
+          /><br />
+          <b>Nhận lộ trình học tập dành riêng cho bạn!</b>
+        </div>
+
+        <h2 class="tieu-de-muc">HỌC BỔNG VÀ ƯU ĐÃI</h2>
+        <br /><br />
+        <div class="row">
+          <div class="col-md-4">
+            <a
+              asp-controller="Home"
+              asp-action="Event3"
+              style="text-decoration: none; color: inherit"
+            >
+              <div class="card">
+                <img
+                  alt="img"
+                  class="card-img-top"
+                  height="400"
+                  src="./Image/ad-2-03-2.png"
+                  width="400"
+                />
+                <div class="card-body">
+                  <p class="bieu-tuong-ngay">
+                    <i class="fas fa-calendar-alt"> </i>
+                    <span class="van-ban-ngay"> 19/08/2024 </span>
+                  </p>
+                  <h5 class="tieu-de-the">
+                    DUY NHẤT MÙA TỰU TRƯỜNG: MIỄN PHÍ TEST CAMBRIDGE
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              asp-controller="Home"
+              asp-action="Event4"
+              style="text-decoration: none; color: inherit"
+            >
+              <div class="card">
+                <img
+                  alt="A child in a superhero costume with a blue background"
+                  class="card-img-top"
+                  height="400"
+                  src="https://yola.vn/wp-content/uploads/2024/08/YOLA_T7_POST-2_1x1_R4.png"
+                  width="400"
+                />
+                <div class="card-body">
+                  <p class="bieu-tuong-ngay">
+                    <i class="fas fa-calendar-alt"> </i>
+                    <span class="van-ban-ngay"> 12/08/2024 </span>
+                  </p>
+                  <h5 class="tieu-de-the">
+                    Con Phi Thường Trở Lại Trường, Yola Có Nhiều Điều Mới!
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a
+              asp-controller="Home"
+              asp-action="Event2"
+              style="text-decoration: none; color: inherit"
+            >
+              <div class="card">
+                <img
+                  alt="A man and a child using a laptop with a blue background"
+                  class="card-img-top"
+                  height="400"
+                  src="https://yola.vn/wp-content/uploads/2023/11/post-t11-online-mien-phi-suot-doi-2.png"
+                  width="400"
+                />
+                <div class="card-body">
+                  <p class="bieu-tuong-ngay">
+                    <i class="fas fa-calendar-alt"> </i>
+                    <span class="date-text"> 10/11/2023 </span>
+                  </p>
+                  <h5 class="card-title">
+                    VUI LUYỆN NGỮ PHÁP CUỐI KỲ CÙNG YOLA – KHÓA HỌC ONLINE 100% MIỄN
+                    PHÍ
+                  </h5>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="text-center" style="margin-top: 10vh; margin-bottom: 20px">
+          <a
+            class="dropdown-item"
+            asp-area=""
+            asp-controller="Home"
+            asp-action="Event"
+            ><strong><u>Xem tất cả</u></strong></a
+          >
+        </div>
+      </main>
+    </div>
+    <br><br><br><br>
+
+    <footer class="footer">
+      <!--footer primary-->
+      <div class="footer__primary">
+        <div class="footer__widget">
+          <div class="footer__widget__item">
+            <div class="footer__widget__title">
+              <h4>Trụ sở chính</h4>
+            </div>
+            <div class="footer__widget__content">
+              <p>
+                Tầng 10, Tòa nhà Miss Áo Dài, Số 21 Nguyễn Trung Ngạn,P. Bến
+                Nghé, Q. 1, TP. Hồ Chí Minh
+              </p>
+            </div>
+          </div>
+          <div class="footer__widget__item">
+            <div class="footer__widget__title">
+              <h4>Hỗ trợ khách hàng</h4>
+            </div>
+            <div class="footer__widget__content"></div>
+          </div>
+          <div class="footer__widget__item">
+            <div class="footer__widget__title">
+              <h4>Chương trình</h4>
+            </div>
+            <div class="footer__widget__content">
+              <ul class="footer__widget__list">
+                <li class="widget__items">
+                  <a href="" class="widget__items__link">
+                    Tiếng Anh Thiếu Nhi
+                  </a>
+                </li>
+                <li class="widget__items">
+                  <a href="" class="widget__items__link">
+                    Tiếng Anh Thiếu Niên
+                  </a>
+                </li>
+                <li class="widget__items">
+                  <a href="" class="widget__items__link">
+                    Tiếng Anh Học Thuật Nền Tảng
+                  </a>
+                </li>
+                <li class="widget__items">
+                  <a href="" class="widget__items__link"> Luyện Thi IELTS </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__widget__item">
+            <div class="footer__widget__title">
+              <h4>Về YOLA</h4>
+            </div>
+            <div class="footer__widget__content">
+              <ul class="footer__widget__list">
+                <li class="widget__items">
+                  <a href="" class="widget__items__link"> Tuyển Dụng </a>
+                </li>
+                <li class="widget__items">
+                  <a href="" class="widget__items__link"> Liên Hệ </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__widget__social">
+          <div class="widget__social__item">
+            <div class="social__title">
+              <h4>Điện thoại</h4>
+            </div>
+            <div class="social__tel">
+              <p class="contact">028 6285 8080</p>
+            </div>
+          </div>
+          <div class="widget__social__item">
+            <div class="social__title">
+              <h4>Follow Us</h4>
+            </div>
+            <div class="footer__widget__content">
+              <div class="footer__social">
+                <a href="" class="social__link">
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </div>
+              <div class="footer__social">
+                <a href="" class="social__link">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+              <div class="footer__social">
+                <a href="" class="social__link">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__widget__certi">
+          <div class="footer__text">
+            <p>
+              Giấy chứng nhận doanh nghiệp số: 0309139430<br />
+              Ngày cấp giấy phép: 24/07/2009(Thay đổi lần thứ 20, ngày
+              24/05/2021)
+              <br />Nơi cấp: SKHDT TP.HCM
+            </p>
+          </div>
+          <div class="footer__certi__logo">
+            <img src="#" alt="" class="certi__logo" />
+            <!--EnglishWeb/hinh/logosalenoti.png-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+  </body>
+</html>

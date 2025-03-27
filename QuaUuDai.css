@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Phong cách cho banner chính */
+.banner-chinh {
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-chinh .hinh-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Phong cách cho phần giới thiệu quà tặng */
+.phan-gioi-thieu {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f2f2f2;
+}
+
+.phan-gioi-thieu h1 {
+  font-size: 2em;
+  color: #0073e6;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.phan-gioi-thieu p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Phong cách cho phần các thẻ quà tặng */
+.phan-qua-tang {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Sắp xếp thành hai cột */
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: white;
+  max-width: 1000px; /* Giới hạn chiều rộng tổng thể của phần quà tặng */
+  margin: 0 auto; /* Căn giữa phần quà tặng */
+  border-radius: 10px; /* Bo góc cho phần nền trắng */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.the-qua {
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Phong cách cho các hình ảnh quà tặng */
+.the-qua img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Thêm hiệu ứng transition cho cột bên phải */
+.the-qua.phai img {
+  transition: transform 0.3s ease; /* Hiệu ứng phóng to khi di chuột */
+}
+
+/* Hiệu ứng phóng to khi di chuột */
+.the-qua.phai:hover img {
+  transform: scale(1.05);
+}
+
+/* Bố cục cho các phần tử trong lưới */
+.the-qua.trai-tren {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.the-qua.trai-duoi {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.the-qua.phai-tren {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.the-qua.phai-duoi {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* CSS cho modal */
+.hop-thoai {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.noi-dung-hop-thoai {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.noi-dung-hop-thoai h2 {
+  text-align: center;
+}
+.noi-dung-hop-thoai h3 {
+  text-align: left;
+  font-weight: bold;
+  color: #434188; /* Đặt màu cho tiêu đề nếu cần */
+}
+.noi-dung-hop-thoai ul {
+  padding-left: 20px;
+}
+
+.nut-dong {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+header {
+  padding-bottom: 100px;
+}
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a {
+  color: #0077cc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+/*footer*/
+.footer {
+  width: 70%;
+  height: 600px;
+
+  margin: 0 auto; /* Căn giữa footer */
+}
+
+.footer__container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+.footer__widget__title {
+  font-size: 25px;
+}
+
+.footer__widget {
+  display: flex;
+  justify-content: center; /* Căn giữa các widget */
+  width: 100%;
+}
+
+.footer__widget__item {
+  flex: 25%;
+}
+
+.footer__widget__item:first-child {
+  flex: 40%;
+}
+.footer__widget__item:nth-child(3) {
+  flex: 40%;
+}
+
+.footer__widget__item:not(:first-child) {
+  text-align: center;
+}
+.footer__widget__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__widget__list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.widget__items__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.widget__items {
+  margin-top: 10px;
+}
+
+.footer__widget__content {
+  line-height: 30px;
+}
+
+.widget__center__link {
+  text-decoration: none;
+  color: #0c99d5;
+  font-weight: bold;
+}
+
+.widget__center__link:hover {
+  color: #000;
+}
+.footer__widget__social {
+  display: flex;
+}
+
+.widget__social__item {
+  margin-right: 100px;
+}
+.social__link i {
+  font-size: 25px;
+  margin: 0px 10px;
+}
+
+.social__link i.fa-youtube {
+  color: red;
+}
+
+.social__link i.fa-tiktok {
+  color: black;
+}
+.social__title {
+  text-align: center;
+}
+
+.footer__widget__certi {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
